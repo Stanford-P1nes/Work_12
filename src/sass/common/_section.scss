@@ -1,0 +1,14 @@
+@import './color';
+
+section.section {
+    display: block;
+    width: 100%;
+    padding: 155px 0 140px;
+    &:nth-child(1) {
+        background-color: $bg-color;
+    }
+    &:nth-child(3) {
+        padding: 100px 0;
+        background-color: $bg-color;
+    }
+}

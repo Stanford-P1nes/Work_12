@@ -1,0 +1,61 @@
+@import './../common/font-family';
+@import './../common/color';
+
+.reviews {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section_reviews {
+    margin-bottom: 80px;
+}
+
+.wrapper-reviews {
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.review {
+    width: 100%;
+    background-color: $bg-color;
+    scroll-snap-align: center;
+    padding: 45px 95px;
+}
+
+.paragraph_review {
+    font-weight: 400;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 58px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.person-image {
+    user-select: none;
+    margin-right: 35px;
+}
+
+.wrapper-person-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading_wrapper-person-data {
+    margin-bottom: 10px;
+}
+
+.paragraph_wrapper-person-data {
+    font-weight: 400;
+    line-height: 19px;
+    color: #4f4f4f;
+}
+
+.block-pagination_reviews {
+    margin-top: 50px;
+}

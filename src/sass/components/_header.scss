@@ -1,0 +1,78 @@
+@import './../common/font-family';
+@import './../common/color';
+
+.header-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0 31px;
+}
+
+.link-logo {
+    display: flex;
+    column-gap: 30px;
+}
+
+.top-line {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+}
+
+.list_top-line-info {
+    display: flex;
+    column-gap: 40px;
+    .paragraph {
+        font-weight: 400;
+        line-height: 17px;
+        color: #000;
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        text-wrap: nowrap;
+    }
+}
+
+.list_bottom-line-menu {
+    display: flex;
+    column-gap: 68px;
+    .paragraph {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-color;
+        text-wrap: nowrap;
+    }
+}
+
+.link_list {
+    transition: color 0.1s linear;
+    &:hover, :active {
+        color: $accent;
+    }
+}
+
+.header-buner {
+    background-image: url('./../img/Header/pictureBuner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-top: 170px;
+}
+
+.header-buner-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading_header-buner-content {
+    max-width: 589px;
+    margin-bottom: 80px;
+    color: $white;
+}
+
+.block-pagination_header-buner-inner {
+    margin-top: 70px;
+    margin-bottom: 98px;
+}

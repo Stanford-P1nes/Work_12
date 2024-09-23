@@ -1,0 +1,83 @@
+@import './../common/font-family';
+@import './../common/color';
+
+.about-us {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-section_about-us {
+    width: 445px;
+}
+
+.heading_title-section_about-us {
+    line-height: 70px; 
+    color: #333;
+    margin-bottom: 60px;
+    span {
+        color: $accent;
+    }
+}
+
+.paragraph_title-section_about-us {
+    font-weight: 400;
+    line-height: 25px;
+    color: #000;
+}
+
+.grid-about-us-title {
+    display: grid;
+    grid-template-columns: repeat(2, 255px);
+    gap: 30px;
+    padding-top: 34px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    padding: 30px 40px 40px;
+    transition: background-color 0.2s linear;
+    &:hover, :active {
+        background-color: $accent;
+        .title-block {
+            color: $white;
+        }
+        .paragraph_block {
+            color: $white;
+        }
+        .link_block {
+            color: $white;
+        }
+    }
+}
+
+.block_grid-about-us-title {
+    height: 255px;
+}
+
+.title-block {
+    font-family: $font-family;
+    font-weight: 900;
+    font-size: 55px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.paragraph_block {
+    line-height: 18px; 
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 47px;
+    max-width: 112px;
+}
+
+.link_block {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $accent;
+}

@@ -1,0 +1,35 @@
+.block-pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-arrow-button {
+    display: flex;
+}
+
+.wrapper-pagination {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 40px;
+}
+
+.pagination {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.block-pagination_accent {
+    .pagination {
+        background-color: $accent;
+    }
+    .arrow-button {
+        background: rgba($accent, 0.2);
+        &:hover, :active {
+            background: rgba($accent, 1);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import './../common/font-family';
+@import './../common/color';
+
+.our-clients {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section_our-clients {
+    margin-bottom: 80px;
+}
+
+.wrapper-clients {
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 50px;
+    &::-webkit-scrollbar {
+        width: auto;
+        height: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $accent;
+        border-radius: 50px;
+    }
+}
+
+.client {
+    width: 255px;
+    scroll-snap-align: start;
+    img {
+        user-select: none;
+    }
+}
+
+.block-pagination_our-clients {
+    margin-top: 80px;
+}
